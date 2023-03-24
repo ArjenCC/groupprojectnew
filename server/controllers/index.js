@@ -16,13 +16,13 @@ let User = userModel.User; // alias
 
 /* GET home page. with login details*/
 module.exports.displayHomePageWithLogin=(req, res, next)=> {
-    res.render('index', {title: 'NST Survey', displayName: req.user ? req.user.displayName: ''});
+    res.render('index', {title: 'ThiArMo Survey', displayName: req.user ? req.user.displayName: ''});
   };
 
 //Controller for index page with 
 
 module.exports.displayHomePage=(req, res, next)=> {
-    res.render('index', {title: 'NST Survey'});
+    res.render('index', {title: 'ThiArMo Survey'});
   };
 
 
